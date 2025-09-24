@@ -3,57 +3,58 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html,
 body,
 #root {
-  height: 100dvh;
-  width: 100dvw;
-  overflow-y: auto;
-  background-color: #e9efed;
-  font-family: "Jura", sans-serif;
-  font-weight: 400;
+	height: 100dvh;
+	width: 100dvw;
+	scroll-behavior: smooth;
+	overflow-y: auto;
+	background-color: #e9efed;
+	font-family: "Jura", sans-serif;
+	font-weight: 400;
 }
 
 svg {
-  stroke-linecap: round;
-  stroke-linejoin: round;
+	stroke-linecap: round;
+	stroke-linejoin: round;
 }
 
 ul,
 ol {
-  list-style: none;
+	list-style: none;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 a,
 button,
 li {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .hidden-mobile {
-  display: none;
+	display: none;
 }
 
 .hidden-desktop {
-  display: block;
+	display: block;
 }
 
 @media (min-width: 768px) {
-  .hidden-mobile {
-    display: block;
-  }
+	.hidden-mobile {
+		display: block;
+	}
 
-  .hidden-desktop {
-    display: none;
-  }
+	.hidden-desktop {
+		display: none;
+	}
 }

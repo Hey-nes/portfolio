@@ -1,65 +1,67 @@
 .topbar {
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  display: flex;
-  height: 6rem;
-  width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	display: flex;
+	height: 6rem;
+	width: 100%;
+	background-color: #e9efed;
 }
 
 .topbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1440px;
-  padding: 0 1.5rem 0 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 1440px;
+	padding: 0 1.5rem 0 1.5rem;
 }
 
 .burger {
-  width: 2.5rem;
-  height: 2.5rem;
-  border: none;
-  stroke-width: 2.25px;
-  background-color: #e9efed;
+	width: 2.5rem;
+	height: 2.5rem;
+	border: none;
+	stroke-width: 2.25px;
+	background-color: #e9efed;
 }
 
 @media (min-width: 768px) {
-  .topbar {
-    height: 7.5rem;
-  }
+	.topbar {
+		height: 7.5rem;
+	}
 
-  .topbar .container {
-    margin: 0 auto;
-    padding: 0 1rem 0 1rem;
-  }
+	.topbar .container {
+		margin: 0 auto;
+		padding: 0 2.5rem 0 2.5rem;
+	}
 
-  .logo {
-    font-size: 3rem;
-  }
+	.logo {
+		font-size: 3.5rem;
+	}
 
-  .navigation {
-    display: flex;
-    gap: 10rem;
-    font-size: 2rem;
-  }
+	.navigation {
+		display: flex;
+		gap: 7rem;
+		font-size: 2rem;
+	}
 
-  .navigation li {
-    position: relative;
-  }
+	.navigation li {
+		position: relative;
+		margin-bottom: -0.25rem;
+	}
 
-  .navigation li::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -0.5rem;
-    width: 0;
-    height: 0.25rem;
-    background: #b9d2da;
-    transition: width 0.3s ease;
-  }
+	.navigation li::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -0.5rem;
+		width: 0;
+		height: 0.25rem;
+		background: #b9d2da;
+		transition: width 0.3s ease;
+	}
 
-  .navigation li:hover::after {
-    width: 100%;
-  }
+	.navigation li:hover::after {
+		width: 100%;
+	}
 }
