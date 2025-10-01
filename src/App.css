@@ -1,5 +1,33 @@
 .section {
 	height: 100dvh;
-	padding-top: 10rem;
+	width: 100%;
+	padding-top: 6rem;
 	text-align: center;
+}
+
+.section svg {
+	width: 2.5rem;
+	stroke-width: 1.5px;
+}
+
+.home h1 {
+	font-size: 4rem;
+	padding: 0 0.5rem 2rem 0.5rem;
+}
+
+.home h2 {
+	font-size: 2rem;
+	padding-bottom: 2rem;
+}
+
+.selfie {
+	width: 100%;
+}
+
+.icon-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	padding-top: 1.75rem;
 }

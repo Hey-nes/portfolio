@@ -10,7 +10,7 @@
 
 .topbar .container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
 	width: 100%;
 	max-width: 1440px;
@@ -27,7 +27,7 @@
 
 @media (min-width: 768px) {
 	.topbar {
-		height: 7.5rem;
+		height: 6rem;
 	}
 
 	.topbar .container {
@@ -35,14 +35,11 @@
 		padding: 0 2.5rem 0 2.5rem;
 	}
 
-	.logo {
-		font-size: 3.5rem;
-	}
-
 	.navigation {
 		display: flex;
 		gap: 7rem;
 		font-size: 2rem;
+		padding-right: 5rem;
 	}
 
 	.navigation li {

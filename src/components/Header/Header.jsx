@@ -13,10 +13,6 @@ function Header() {
 		<>
 			<header className="topbar">
 				<div className="container">
-					<h1 className="logo">
-						<a href="#home">Sebastian Heynes</a>
-					</h1>
-
 					<ul className="navigation hidden-mobile">
 						<li>
 							<a href="#about">About</a>
@@ -35,8 +31,6 @@ function Header() {
 							fill="none"
 							xmlns="http://www.w3.org/2000/svg"
 							stroke="currentColor"
-							stroke-linecap="round"
-							stroke-linejoin="round"
 						>
 							<path d="M3 5H21" />
 							<path d="M3 12H21" />
