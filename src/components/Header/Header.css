@@ -12,9 +12,6 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	width: 100%;
-	max-width: 1440px;
-	padding: 0 1.5rem 0 1.5rem;
 }
 
 .burger {
@@ -27,12 +24,7 @@
 
 @media (min-width: 768px) {
 	.topbar {
-		height: 6rem;
-	}
-
-	.topbar .container {
-		margin: 0 auto;
-		padding: 0 2.5rem 0 2.5rem;
+		height: 8rem;
 	}
 
 	.navigation {
