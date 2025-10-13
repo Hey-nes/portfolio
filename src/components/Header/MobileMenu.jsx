@@ -1,31 +1,41 @@
-import "./MobileMenu.css";
+// Components
+import Icon from "components/Icons/Icon";
 
-function MobileMenu({ active, onClose }) {
-	
+//Styles
+import "components/Header/MobileMenu.css";
+
+function MobileMenu({ active, toggleMenu }) {
 	return (
 		<div className={`mobile-menu ${active ? "is-active" : ""}`}>
-			<button className="mobile-close" onClick={onClose}>
-				<svg
-					viewBox="0 0 24 24"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-					stroke="currentColor"
-				>
+			<button
+				className="mobile-close"
+				onClick={toggleMenu}
+				aria-label="Close menu"
+			>
+				<Icon>
 					<path d="M6.75827 17.2426L12.0009 12M17.2435 6.75736L12.0009 12M12.0009 12L6.75827 6.75736M12.0009 12L17.2435 17.2426" />
-				</svg>
+				</Icon>
 			</button>
 			<ul className="mobile-navigation">
 				<li>
-					<a onClick={onClose} href="#home">Home</a>
+					<a onClick={toggleMenu} href="#home">
+						Home
+					</a>
 				</li>
 				<li>
-					<a onClick={onClose} href="#about">About</a>
+					<a onClick={toggleMenu} href="#about">
+						About
+					</a>
 				</li>
 				<li>
-					<a onClick={onClose} href="#projects">Projects</a>
+					<a onClick={toggleMenu} href="#projects">
+						Projects
+					</a>
 				</li>
 				<li>
-					<a onClick={onClose} href="#contact">Contact</a>
+					<a onClick={toggleMenu} href="#contact">
+						Contact
+					</a>
 				</li>
 			</ul>
 		</div>

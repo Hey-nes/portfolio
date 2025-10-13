@@ -1,6 +1,12 @@
+//React & core libs
 import { useState } from "react";
-import MobileMenu from "./MobileMenu";
-import "./Header.css";
+
+// Components
+import MobileMenu from "components/Header/MobileMenu";
+import Icon from "components/Icons/Icon";
+
+//Styles
+import "components/Header/Header.css";
 
 function Header() {
 	const [menuActive, setMenuActive] = useState(false);
@@ -25,22 +31,21 @@ function Header() {
 						</li>
 					</ul>
 
-					<button className="burger hidden-desktop" onClick={toggleMenu}>
-						<svg
-							viewBox="0 0 24 24"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							stroke="currentColor"
-						>
+					<button
+						className="burger hidden-desktop"
+						onClick={toggleMenu}
+						aria-label="Open menu"
+					>
+						<Icon>
 							<path d="M3 5H21" />
 							<path d="M3 12H21" />
 							<path d="M3 19H21" />
-						</svg>
+						</Icon>
 					</button>
 				</div>
 			</header>
 
-			<MobileMenu active={menuActive} onClose={toggleMenu} />
+			<MobileMenu active={menuActive} toggleMenu={toggleMenu} />
 		</>
 	);
 }

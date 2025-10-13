@@ -1,7 +1,12 @@
+//React & core libs
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
+
+//Internal components
+import App from "App";
+
+//Global styles
+import "index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

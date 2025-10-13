@@ -6,23 +6,22 @@
 	height: 100%;
 	z-index: 999;
 	transform: translateX(100%);
-	transition: transform 0.15s ease-in-out;
-	background-color: #e9efed;
+	transition: transform 0.25s ease-in-out;
+	background-color: var(--bg-color);
 }
 
 .mobile-menu.is-active {
 	transform: translateX(0);
-	backdrop-filter: blur(2rem);
 }
 
 .mobile-close {
 	position: absolute;
-	top: 2.25rem;
-	right: 1rem;
+	top: 3rem;
+	right: 0.5rem;
 	width: 3.5rem;
 	stroke-width: 1.5px;
 	border: none;
-	background-color: #e9efed;
+	background-color: var(--bg-color);
 }
 
 .mobile-navigation {
@@ -37,5 +36,5 @@
 }
 
 .mobile-navigation li:hover {
-	background-color: #b9d2da;
+	background: var(--accent-color);
 }
