@@ -24,6 +24,7 @@
 	border: none;
 	stroke-width: 2.25px;
 	background-color: var(--bg-color);
+	margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -36,7 +37,7 @@
 		justify-content: center;
 	}
 
-	.navigation {
+	.topbar .navigation {
 		display: flex;
 		gap: 6rem;
 	}

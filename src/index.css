@@ -34,6 +34,32 @@ body,
 	margin: 0 auto;
 }
 
+h1,
+h2 {
+	font-weight: 400;
+}
+
+.section {
+	min-height: 100dvh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	padding-top: 8rem;
+}
+
+.section svg {
+	width: clamp(2.5rem, 3.5vw + 1rem, 4.5rem);
+	height: auto;
+	stroke-width: 1.5px;
+}
+
+.section > :last-child {
+	align-self: flex-end;
+}
+
 svg {
 	stroke-linecap: round;
 	stroke-linejoin: round;
@@ -75,6 +101,10 @@ li {
 	.hidden-desktop {
 		display: none;
 	}
+
+	.section {
+		padding-top: 8rem;
+	}
 }
 
 @media (min-width: 1024px) {
@@ -86,6 +116,10 @@ li {
 @media (min-width: 1280px) {
 	:root {
 		--page-padding: 3rem;
+	}
+
+	.section {
+		padding-top: 14rem;
 	}
 }
 

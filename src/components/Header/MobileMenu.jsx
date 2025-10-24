@@ -32,11 +32,6 @@ function MobileMenu({ active, toggleMenu }) {
 						Projects
 					</a>
 				</li>
-				<li>
-					<a onClick={toggleMenu} href="#contact">
-						Contact
-					</a>
-				</li>
 			</ul>
 		</div>
 	);
