@@ -1,11 +1,12 @@
 // Styles
 import "components/Button/Button.css"
 
-function Button( {text, icon, variant} ) {
+function Button( {children, icon, variant} ) {
 	const className = variant === "light" ? "button light" : "button dark"
+
 	return (
 		<button className={className}>
-			<p className="button-text">{text}</p>
+			<p className="button-text">{children}</p>
 			{icon}
 		</button>
 	)

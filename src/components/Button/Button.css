@@ -16,7 +16,15 @@
 	background-color: var(--bg-color);
 }
 
+.light:hover {
+	background-color: #d2d7d5;
+}
+
 .dark {
-	background-color: black;
+	background-color: #111111;
 	color: white;
+}
+
+.dark:hover {
+	background-color: #292929;
 }

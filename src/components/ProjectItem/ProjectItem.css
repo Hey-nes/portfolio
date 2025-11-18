@@ -1,0 +1,13 @@
+.project-title {
+	margin: 2.5rem 0 0.5rem 0;
+}
+
+.project-image {
+	width: 100%;
+	height: auto;
+}
+
+.button-container {
+	display: flex;
+	gap: 2.5rem;
+}
