@@ -1,10 +1,6 @@
 // Components
+import Carousel from "components/Carousel/Carousel";
 import IconHome from "components/Icons/IconHome";
-
-// Assets
-import Music from "assets/Music.jpg";
-import Motorcycle from "assets/Motorcycle.jpg";
-import Mountain from "assets/Mountain.jpg";
 
 // Styles
 import "sections/About/About.css";
@@ -12,33 +8,18 @@ import "sections/About/About.css";
 function About() {
 	return (
 		<section id="about" className="about section">
-			<h1>About me</h1>
+			<h1 className="section-header">About me</h1>
 			<p className="background">
-				Professional background in customer support. Educated as a Fullstack
-				Developer by Nackademin. Work experience at Bitwise Media as a Fullstack
-				Developer and at Telenor/Ownit as a Backend/System Developer. 33 years
-				old, born and raised in Stockholm, Sweden.
+				My professional background is in customer support, both as a customer service representative and leader. I am educated as a Full-stack
+				Developer by Nackademin. Work experience includes Telenor/Ownit as a Backend/System Developer. I also co-founded Bitwise Media where I have worked as a Full-stack Developer.
 			</p>
 			<p className="description">
-				A lot of things in this world interest me besides code. I would say
-				learning new skills is my favorite hobby. Wether that involves learning
-				how to play a new instrument, fixing something on my motorcycle or
-				climbing a mountain.
+				I view challenges as opportunities, love to learn and develop new
+				skills. I'm always obsessing about something, deconstructing it and learning everything I can about it. No challenge is too big or small, whether it involves
+				programming, learning a new instrument, working on my motorcycle or even climbing a mountain. Spreading
+				positivity and uplifting the people around me is my signature trait.
 			</p>
-			<div className="image-container">
-				<img
-					src={Music}
-					alt="Sebastian playing music"
-				/>
-				<img
-					src={Motorcycle}
-					alt="A 1987 Suzuki DR 600 S motorcycle"
-				/>
-				<img
-					src={Mountain}
-					alt="Sebastian on a mountain top"
-				/>
-			</div>
+			<Carousel />
 			<IconHome />
 		</section>
 	);

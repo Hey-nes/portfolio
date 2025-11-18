@@ -40,20 +40,21 @@ h2 {
 }
 
 .section {
-	min-height: 100dvh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 auto;
-	padding-top: 8rem;
 }
 
-.section svg {
-	width: clamp(2.5rem, 3.5vw + 1rem, 4.5rem);
-	height: auto;
-	stroke-width: 1.5px;
+.about,
+.projects {
+	padding-top: 4rem;
+}
+
+.section-header {
+	font-size: clamp(2.25rem, 2.25vw + 1.5rem, 5rem);
 }
 
 .section > :last-child {
@@ -63,6 +64,12 @@ h2 {
 svg {
 	stroke-linecap: round;
 	stroke-linejoin: round;
+	stroke-width: 1.5px;
+}
+
+.topbar svg,
+.mobile-menu svg  {
+	width: 3rem;
 }
 
 ul,
@@ -85,8 +92,9 @@ li {
 	display: none;
 }
 
+.hidden-tablet,
 .hidden-desktop {
-	display: block;
+	display: flex;
 }
 
 @media (min-width: 768px) {
@@ -94,11 +102,12 @@ li {
 		--page-padding: 1.5rem;
 	}
 
-	.hidden-mobile {
-		display: block;
+	.hidden-mobile,
+	.hidden-desktop {
+		display: flex;
 	}
 
-	.hidden-desktop {
+	.hidden-tablet {
 		display: none;
 	}
 
@@ -110,6 +119,15 @@ li {
 @media (min-width: 1024px) {
 	:root {
 		--page-padding: 2rem;
+	}
+
+	.hidden-mobile,
+	.hidden-tablet {
+		display: flex;
+	}
+
+	.hidden-desktop {
+		display: none;
 	}
 }
 

@@ -1,5 +1,13 @@
 .home {
 	text-align: center;
+	min-height: 100dvh;
+	padding-top: 8rem;
+}
+
+.home svg {
+	width: clamp(2.5rem, 3.5vw + 1rem, 4.5rem);
+	height: auto;
+	stroke-width: 1.5px;
 }
 
 .header-container h1,
@@ -9,7 +17,7 @@
 
 .header-container h1 {
 	font-size: clamp(4rem, 6vw + 2rem, 10.425rem);
-	word-spacing: 120%;
+	word-spacing: 130%;
 }
 
 .header-container h2 {
@@ -32,7 +40,7 @@
 	width: 100%;
 	max-width: 100%;
 	height: auto;
-	align-self: center;
+	align-self: flex-end;
 	object-fit: cover;
 	margin-top: auto;
 }

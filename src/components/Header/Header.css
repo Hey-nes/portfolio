@@ -28,10 +28,6 @@
 }
 
 @media (min-width: 768px) {
-	.topbar {
-		height: 8rem;
-	}
-
 	.topbar .container {
 		align-items: center;
 		justify-content: center;
@@ -64,10 +60,6 @@
 }
 
 @media (min-width: 1280px) {
-	.topbar {
-		height: 12rem;
-	}
-
 	.topbar .container {
 		justify-content: flex-end;
 	}
@@ -78,11 +70,13 @@
 }
 
 @media (min-width: 1440px) {
-	.topbar {
-		height: 14rem;
-	}
-
 	.navigation {
 		gap: 6rem;
+	}
+}
+
+@media (min-width: 1920px) {
+	.topbar {
+		height: 8rem;
 	}
 }
