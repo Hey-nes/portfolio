@@ -16,11 +16,11 @@ function ProjectItem({
 	siteLink,
 }) {
 	return (
-		<>
+		<div className="project-item">
 			<h2 className="project-title">{title}</h2>
 			<img className="project-image" src={src} alt={alt} />
-			<SkillList skills={skills} />
-			<p>{description}</p>
+			<SkillList className="skill-list" skills={skills} />
+			<p className="project-description description">{description}</p>
 			<div className="button-container">
 				{siteLink && (
 					<a href={siteLink} target="_blank" rel="noreferrer">
@@ -55,7 +55,7 @@ function ProjectItem({
 					</a>
 				)}
 			</div>
-		</>
+		</div>
 	);
 }
 

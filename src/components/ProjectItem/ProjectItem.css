@@ -1,5 +1,13 @@
+.project-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+}
+
 .project-title {
-	margin: 2.5rem 0 0.5rem 0;
+	font-size: clamp(2.5rem, 2vw + 1.5rem, 4rem);
+	margin: 2rem 0 0.5rem 0;
 }
 
 .project-image {
@@ -7,7 +15,100 @@
 	height: auto;
 }
 
+.project-description {
+	max-width: 36ch;
+	text-align: center;
+}
+
 .button-container {
 	display: flex;
 	gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+	.projects {
+		max-width: 90%;
+	}
+
+	.project-item {
+		gap: 1.75rem;
+	}
+
+	.project-description {
+		max-width: 56ch;
+		text-align: center;
+	}
+}
+
+@media (min-width: 1024px) {
+	.project-item {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-template-areas:
+			"title image"
+			"skills image"
+			"buttons image"
+			"description description";
+		column-gap: 1rem;
+		row-gap: 1rem;
+		margin-top: 2rem;
+	}
+
+	.project-title,
+	.skill-container,
+	.button-container {
+		justify-self: center;
+	}
+
+	.project-title {
+		grid-area: title;
+		margin: 0;
+	}
+
+	.skill-container {
+		grid-area: skills;
+	}
+
+	.button-container {
+		grid-area: buttons;
+	}
+
+	.project-image {
+		grid-area: image;
+	}
+
+	.project-description {
+		grid-area: description;
+		margin-top: 2.5rem;
+		max-width: 100%;
+		text-align: left;
+	}
+}
+
+@media (min-width: 1280px) {
+	.project-item {
+		column-gap: 2.5rem;
+		row-gap: 1rem;
+		margin-top: 6rem;
+	}
+
+	.project-description {
+		margin-top: 2.5rem;
+	}
+}
+
+@media (min-width: 1440px) {
+	.project-item {
+		column-gap: 5rem;
+	}
+}
+
+@media (min-width: 1920px) {
+	.project-title {
+		align-self: end;
+	}
+
+	.button-container {
+		align-self: start;
+	}
 }

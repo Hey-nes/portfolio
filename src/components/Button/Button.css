@@ -2,14 +2,15 @@
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	width: 6.5rem;
-	height: 2.25rem;
+	font-size: 1rem;
+	width: 8rem;
+	height: 3rem;
 	border: 1px solid black;
 	border-radius: 0.5rem;
 }
 
 .button svg {
-	width: 1.5rem;
+	width: 1.75rem;
 }
 
 .light {
@@ -27,4 +28,16 @@
 
 .dark:hover {
 	background-color: #292929;
+}
+
+@media (min-width: 1024px) {
+	.button {
+		font-size: 1.25rem;
+		width: 10rem;
+		height: 3.5rem;
+	}
+
+	.button svg {
+		width: 2.25rem;
+	}
 }

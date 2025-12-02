@@ -1,6 +1,6 @@
 // Components
 import ProjectItem from "components/ProjectItem/ProjectItem";
-import Motorcycle from "assets/Motorcycle.jpg";
+import Colombine from "assets/Colombine.jpg";
 import IconHome from "components/Icons/IconHome";
 
 // Styles
@@ -12,12 +12,12 @@ function Projects() {
 			<h1 className="section-header">Projects</h1>
 			<ProjectItem
 				title={"Colombine"}
-				src={Motorcycle}
+				src={Colombine}
 				alt={"Image of the website of Colombine Teaterförlag"}
-				skills={["Typescript", "React", "Python", "MySQL"]}
-				description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quasi enim repudiandae delectus non at doloremque sequi architecto, quisquam quod repellat unde quaerat porro iste illum voluptates facere. Tenetur, sequi!"
+				skills={["HTML", "CSS", "PHP", "WordPress"]}
+				description="Rebuilt the website for Colombine Teaterförlag, creating a new mobile-first design and integrating it into their existing technical infrastructure. Also developed a company style guide and standardized e-mail signatures. A colleague and I were solely responsible for the entire process, from preparing time and cost estimates to development, launch and
+				ongoing improvements based on user feedback."
 				siteLink={"https://colombine.se"}
-				repoLink={"https://github.com/hey-nes"}
 			/>
 			<IconHome />
 		</section>
