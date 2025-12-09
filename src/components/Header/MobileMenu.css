@@ -37,3 +37,9 @@
 .mobile-navigation li:hover {
 	background: var(--accent-color);
 }
+
+.mobile-navigation li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}

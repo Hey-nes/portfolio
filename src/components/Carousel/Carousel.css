@@ -10,7 +10,6 @@
 .carousel-inner {
 	width: 100%;
 	overflow: hidden;
-	border-radius: 0.25rem;
 	transition: transform 0.5s ease-in-out;
 }
 
@@ -32,12 +31,9 @@
 	height: auto;
 	display: block;
 	object-fit: cover;
+	border-radius: 0.5rem;
 }
 
-/*
-Todo:
-Fix conflicting styles between display:flex and hidden-desktop
-*/
 .carousel-controls {
 	display: flex;
 	justify-content: space-between;

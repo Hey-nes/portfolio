@@ -1,6 +1,6 @@
 // Components
-import Button from "components/Button/Button";
 import SkillList from "components/SkillList/SkillList";
+import Button from "components/Button/Button";
 
 // Styling
 import "components/ProjectItem/ProjectItem.css";
@@ -10,6 +10,7 @@ function ProjectItem({
 	title,
 	src,
 	alt,
+	disclaimer,
 	skills,
 	description,
 	repoLink,
@@ -18,7 +19,14 @@ function ProjectItem({
 	return (
 		<div className="project-item">
 			<h2 className="project-title">{title}</h2>
-			<img className="project-image" src={src} alt={alt} />
+			<div className="project-image-container">
+				<img className="project-image" src={src} alt={alt} />
+				{disclaimer && (
+					<strong className="description">
+						Image is AI generated - not actual code
+					</strong>
+				)}
+			</div>
 			<SkillList className="skill-list" skills={skills} />
 			<p className="project-description description">{description}</p>
 			<div className="button-container">

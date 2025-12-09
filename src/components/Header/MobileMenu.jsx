@@ -17,20 +17,14 @@ function MobileMenu({ active, toggleMenu }) {
 				</Icon>
 			</button>
 			<ul className="mobile-navigation">
-				<li>
-					<a onClick={toggleMenu} href="#home">
-						Home
-					</a>
+				<li onClick={toggleMenu}>
+					<a href="#home">Home</a>
 				</li>
-				<li>
-					<a onClick={toggleMenu} href="#about">
-						About
-					</a>
+				<li onClick={toggleMenu}>
+					<a href="#about">About</a>
 				</li>
-				<li>
-					<a onClick={toggleMenu} href="#projects">
-						Projects
-					</a>
+				<li onClick={toggleMenu}>
+					<a href="#projects">Projects</a>
 				</li>
 			</ul>
 		</div>
