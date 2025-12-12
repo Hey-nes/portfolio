@@ -12,7 +12,8 @@ function ProjectItem({
 	alt,
 	disclaimer,
 	skills,
-	description,
+	paragraphOne,
+	paragraphTwo,
 	repoLink,
 	siteLink,
 }) {
@@ -28,7 +29,14 @@ function ProjectItem({
 				)}
 			</div>
 			<SkillList className="skill-list" skills={skills} />
-			<p className="project-description description">{description}</p>
+			<p className="project-description paragraph-one description">
+				{paragraphOne}
+			</p>
+			{paragraphTwo && (
+				<p className="project-description paragraph-two description">
+					{paragraphTwo}
+				</p>
+			)}
 			<div className="button-container">
 				{siteLink && (
 					<a href={siteLink} target="_blank" rel="noreferrer">
