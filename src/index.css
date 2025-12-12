@@ -23,6 +23,7 @@ body,
 :root {
 	--bg-color: #e9efed;
 	--accent-color: #b9d2da;
+	--icon-color: #000;
 	--page-max-width: 1920px;
 	--page-padding: 1rem;
 }

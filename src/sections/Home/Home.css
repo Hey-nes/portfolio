@@ -43,6 +43,7 @@
 	align-self: flex-end;
 	object-fit: cover;
 	margin-top: auto;
+	min-width: 0;
 }
 
 @media (min-width: 1024px) {
@@ -81,26 +82,10 @@
 	.icon-container {
 		margin-top: 4rem;
 	}
-
-	.header-container {
-		flex: 0 0 50%;
-	}
-
-	.selfie {
-		flex: 0 0 50%;
-	}
 }
 
 @media (min-width: 1440px) {
 	.icon-container {
 		gap: 3rem;
-	}
-
-	.header-container {
-		flex: 0 0 50%;
-	}
-
-	.selfie {
-		flex: 0 0 50%;
 	}
 }
