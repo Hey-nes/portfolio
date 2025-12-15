@@ -5,7 +5,7 @@
 }
 
 .home svg {
-	width: clamp(2.5rem, 3.5vw + 1rem, 4.5rem);
+	width: clamp(2.5rem, 3vw + 1rem, 4.5rem);
 	height: auto;
 	stroke-width: 1.5px;
 }
@@ -16,7 +16,7 @@
 }
 
 .header-container h1 {
-	font-size: clamp(4rem, 6vw + 2rem, 10.425rem);
+	font-size: clamp(4rem, 5vw + 2rem, 10.425rem);
 	word-spacing: 130%;
 }
 

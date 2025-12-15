@@ -110,10 +110,15 @@
 	}
 }
 
+@media (min-width: 1024px) {
+	.project-title {
+		margin-top: 0;
+	}
+}
+
 @media (min-width: 1280px) {
 	.project-item {
 		column-gap: 2.5rem;
-		row-gap: 1rem;
 		margin: 1.5rem 0;
 	}
 
@@ -128,7 +133,6 @@
 
 @media (min-width: 1440px) {
 	.project-item {
-		column-gap: 5rem;
 		margin: 3rem 0;
 	}
 
@@ -139,6 +143,7 @@
 
 @media (min-width: 1920px) {
 	.project-item {
+		column-gap: 5rem;
 		margin: 4rem 0;
 	}
 

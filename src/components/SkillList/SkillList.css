@@ -12,12 +12,12 @@
 }
 
 .skill-item svg {
-	width: 1.75rem;
+	width: clamp(1.75rem, 2vw + 1rem, 2.75rem);
 	flex-shrink: 0;
 }
 
 .skill-item p {
-	font-size: 1.05rem;
+	font-size: clamp(1rem, 1.25vw + 1rem, 2.5rem);
 }
 
 @media (min-width: 1024px) {
@@ -30,14 +30,6 @@
 	.skill-item {
 		gap: 1rem;
 		width: 100%;
-	}
-
-	.skill-item svg {
-		width: 2.75rem;
-	}
-
-	.skill-item p {
-		font-size: 2.5rem;
 	}
 }
 

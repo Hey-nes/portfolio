@@ -79,4 +79,8 @@
 	.topbar {
 		height: 8rem;
 	}
+
+	.navigation {
+		margin-right: 0.5rem;
+	}
 }

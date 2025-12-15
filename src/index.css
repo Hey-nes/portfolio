@@ -134,7 +134,7 @@ li {
 
 @media (min-width: 1280px) {
 	:root {
-		--page-padding: 3rem;
+		--page-padding: 9rem;
 	}
 
 	.section {
@@ -142,7 +142,7 @@ li {
 	}
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
 	:root {
 		--page-padding: 5rem;
 	}
