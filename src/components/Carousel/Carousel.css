@@ -20,10 +20,17 @@
 }
 
 .carousel-slide {
+	position: relative;
 	min-width: 100%;
+	aspect-ratio: 4 / 3;
+}
+
+.image-loading {
+	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	inset: 0;
 }
 
 .carousel-slide img {
@@ -96,4 +103,3 @@
 		margin: 4rem auto;
 	}
 }
-

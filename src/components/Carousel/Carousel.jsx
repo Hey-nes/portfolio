@@ -1,5 +1,5 @@
 // Components
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Icon from "components/Icons/Icon";
 
 // Assets
@@ -17,7 +17,32 @@ const images = [
 ];
 
 function Carousel() {
+	const [loaded, setLoaded] = useState(() => images.map(() => false));
 	const [currentIndex, setCurrentIndex] = useState(0);
+
+	useEffect(() => {
+		const nextIndex = (currentIndex + 1) % images.length;
+		const img = new Image();
+		img.src = images[nextIndex].src;
+
+		img.onload = () =>
+			setLoaded((prev) => {
+				if (!prev[nextIndex]) {
+					const copy = [...prev];
+					copy[nextIndex] = true;
+					return copy;
+				}
+				return prev;
+			});
+	}, [currentIndex]);
+
+	const handleImageLoad = (index) => {
+		setLoaded((prev) => {
+			const copy = [...prev];
+			copy[index] = true;
+			return copy;
+		});
+	};
 
 	const prevSlide = () => {
 		setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
@@ -36,7 +61,18 @@ function Carousel() {
 				>
 					{images.map((image, i) => (
 						<div className="carousel-slide" key={i}>
-							<img src={image.src} alt={image.alt} />
+							{!loaded[i] && (
+								<div className="image-loading">
+									<p>Loading...</p>
+								</div>
+							)}
+
+							<img
+								src={image.src}
+								alt={image.alt}
+								onLoad={() => handleImageLoad(i)}
+								style={{ visibility: loaded[i] ? "visible" : "hidden" }}
+							/>
 						</div>
 					))}
 				</div>

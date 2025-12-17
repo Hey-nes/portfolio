@@ -14,6 +14,7 @@ function ProjectItem({
 	skills,
 	paragraphOne,
 	paragraphTwo,
+	paragraphThree,
 	repoLink,
 	siteLink,
 }) {
@@ -24,7 +25,7 @@ function ProjectItem({
 				<img className="project-image" src={src} alt={alt} />
 				{disclaimer && (
 					<strong className="description">
-						Image is AI generated - not actual code
+						Image is AI generated, not real code
 					</strong>
 				)}
 			</div>
@@ -35,6 +36,11 @@ function ProjectItem({
 			{paragraphTwo && (
 				<p className="project-description paragraph-two description">
 					{paragraphTwo}
+				</p>
+			)}
+			{paragraphThree && (
+				<p className="project-description paragraph-three description">
+					{paragraphThree}
 				</p>
 			)}
 			<div className="button-container">

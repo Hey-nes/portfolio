@@ -1,6 +1,5 @@
 // Components
 import Carousel from "components/Carousel/Carousel";
-import IconHome from "components/Icons/IconHome";
 
 // Styles
 import "sections/About/About.css";
@@ -20,7 +19,6 @@ function About() {
 				positivity and uplifting the people around me is my signature trait.
 			</p>
 			<Carousel />
-			<IconHome />
 		</section>
 	);
 }
