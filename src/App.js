@@ -5,18 +5,18 @@ import About from "sections/About/About";
 import Projects from "sections/Projects/Projects";
 
 function App() {
-	return (
-		<>
-			<Header />
-			<main className="main">
-				<div className="container">
-					<Home />
-					<About />
-					<Projects />
-				</div>
-			</main>
-		</>
-	);
+  return (
+    <>
+      <Header />
+      <main className="main">
+        <div className="container">
+          <Home />
+          <About />
+          <Projects />
+        </div>
+      </main>
+    </>
+  );
 }
 
 export default App;

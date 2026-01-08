@@ -9,45 +9,45 @@ import Icon from "components/Icons/Icon";
 import "components/Header/Header.css";
 
 function Header() {
-	const [menuActive, setMenuActive] = useState(false);
+  const [menuActive, setMenuActive] = useState(false);
 
-	const toggleMenu = () => {
-		setMenuActive((prev) => !prev);
-	};
+  const toggleMenu = () => {
+    setMenuActive((prev) => !prev);
+  };
 
-	return (
-		<>
-			<header className="topbar">
-				<div className="container">
-					<ul className="navigation hidden-mobile">
-						<li>
-							<a href="#home">Home</a>
-						</li>
-						<li>
-							<a href="#about">About</a>
-						</li>
-						<li>
-							<a href="#projects">Projects</a>
-						</li>
-					</ul>
+  return (
+    <>
+      <header className="topbar">
+        <div className="container">
+          <ul className="navigation hidden-mobile">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+          </ul>
 
-					<button
-						className="burger hidden-tablet hidden-desktop"
-						onClick={toggleMenu}
-						aria-label="Open menu"
-					>
-						<Icon>
-							<path d="M3 5H21" />
-							<path d="M3 12H21" />
-							<path d="M3 19H21" />
-						</Icon>
-					</button>
-				</div>
-			</header>
+          <button
+            className="burger hidden-tablet hidden-desktop"
+            onClick={toggleMenu}
+            aria-label="Open menu"
+          >
+            <Icon>
+              <path d="M3 5H21" />
+              <path d="M3 12H21" />
+              <path d="M3 19H21" />
+            </Icon>
+          </button>
+        </div>
+      </header>
 
-			<MobileMenu active={menuActive} toggleMenu={toggleMenu} />
-		</>
-	);
+      <MobileMenu active={menuActive} toggleMenu={toggleMenu} />
+    </>
+  );
 }
 
 export default Header;

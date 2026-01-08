@@ -1,45 +1,45 @@
 .mobile-menu {
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 999;
-	transform: translateX(100%);
-	transition: transform 0.25s ease-in-out;
-	background-color: var(--bg-color);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 0.25s ease-in-out;
+  background-color: var(--bg-color);
 }
 
 .mobile-menu.is-active {
-	transform: translateX(0);
+  transform: translateX(0);
 }
 
 .mobile-close {
-	position: absolute;
-	top: 2.1rem;
-	right: 0.5rem;
-	width: 3.5rem;
-	border: none;
-	background-color: var(--bg-color);
+  position: absolute;
+  top: 2.1rem;
+  right: 0.5rem;
+  width: 3.5rem;
+  border: none;
+  background-color: var(--bg-color);
 }
 
 .mobile-navigation {
-	margin-top: 7.5rem;
-	text-align: left;
-	font-size: 2rem;
+  margin-top: 7.5rem;
+  text-align: left;
+  font-size: 2rem;
 }
 
 .mobile-navigation li {
-	padding: 1.25rem 2rem;
-	transition: all 0.2s ease;
+  padding: 1.25rem 2rem;
+  transition: all 0.2s ease;
 }
 
 .mobile-navigation li:hover {
-	background: var(--accent-color);
+  background: var(--accent-color);
 }
 
 .mobile-navigation li a {
-	display: block;
-	width: 100%;
-	height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
