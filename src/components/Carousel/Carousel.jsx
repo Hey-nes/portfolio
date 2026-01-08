@@ -20,7 +20,7 @@ function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    images.forEach((image, index) => {
+    images.forEach((image) => {
       const img = new Image();
       img.src = image.src;
     });
