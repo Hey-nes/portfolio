@@ -23,7 +23,12 @@
   border-radius: 0.5rem;
 }
 
-.project-description {
+.paragraph-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraph {
   max-width: 36ch;
   text-align: center;
 }
@@ -42,13 +47,21 @@
     gap: 1.75rem;
   }
 
-  .project-description {
+  .paragraph {
     max-width: 56ch;
     text-align: center;
   }
 }
 
 @media (min-width: 1024px) {
+  .project-image {
+    box-shadow: 0.5rem 0.5rem 0.5rem #d2d7d5;
+  }
+
+  .project-item:nth-child(odd) .project-image {
+    box-shadow: -0.5rem 0.5rem 0.5rem #d2d7d5;
+  }
+
   .project-item {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -56,9 +69,7 @@
       "title image"
       "skills image"
       "buttons image"
-      "paragraph-one paragraph-one"
-      "paragraph-two paragraph-two"
-      "paragraph-three paragraph-three";
+      "description description";
     column-gap: 1rem;
     row-gap: 1rem;
     margin-top: 2rem;
@@ -70,9 +81,7 @@
       "image title"
       "image skills"
       "image buttons"
-      "paragraph-one paragraph-one"
-      "paragraph-two paragraph-two"
-      "paragraph-three paragraph-three";
+      "description description";
   }
 
   .project-title,
@@ -97,22 +106,14 @@
     grid-area: image;
   }
 
-  .project-description {
+  .paragraph-container {
+    grid-area: description;
+  }
+
+  .paragraph {
     margin-top: 2.5rem;
     max-width: 100%;
     text-align: left;
-  }
-
-  .paragraph-one {
-    grid-area: paragraph-one;
-  }
-
-  .paragraph-two {
-    grid-area: paragraph-two;
-  }
-
-  .paragraph-three {
-    grid-area: paragraph-three;
   }
 }
 

@@ -1,10 +1,10 @@
 // Components
 import SkillList from "components/SkillList/SkillList";
+import Icon from "components/Icons/Icon";
 import Button from "components/Button/Button";
 
 // Styling
 import "components/ProjectItem/ProjectItem.css";
-import Icon from "components/Icons/Icon";
 
 function ProjectItem({
   title,
@@ -12,9 +12,7 @@ function ProjectItem({
   alt,
   disclaimer,
   skills,
-  paragraphOne,
-  paragraphTwo,
-  paragraphThree,
+  paragraphs,
   repoLink,
   siteLink,
 }) {
@@ -30,19 +28,11 @@ function ProjectItem({
         )}
       </div>
       <SkillList className="skill-list" skills={skills} />
-      <p className="project-description paragraph-one description">
-        {paragraphOne}
-      </p>
-      {paragraphTwo && (
-        <p className="project-description paragraph-two description">
-          {paragraphTwo}
-        </p>
-      )}
-      {paragraphThree && (
-        <p className="project-description paragraph-three description">
-          {paragraphThree}
-        </p>
-      )}
+      <div className="paragraph-container">
+        {paragraphs.map((paragraph) => (
+          <p className="paragraph description">{paragraph}</p>
+        ))}
+      </div>
       <div className="button-container">
         {siteLink && (
           <a href={siteLink} target="_blank" rel="noreferrer">

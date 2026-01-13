@@ -11,15 +11,19 @@
 
 .button svg {
   width: 1.75rem;
-  color: white;
 }
 
 .light {
-  background-color: var(--bg-color);
+  background-color: #d2d7d5;
+  color: #111111;
 }
 
 .light:hover {
-  background-color: #d2d7d5;
+  background-color: #bdc2c0;
+}
+
+.light svg {
+  color: #111111;
 }
 
 .dark {
@@ -29,6 +33,10 @@
 
 .dark:hover {
   background-color: #292929;
+}
+
+.dark svg {
+  color: white;
 }
 
 @media (min-width: 1024px) {
