@@ -1,9 +1,20 @@
 // Components
+import AlbinHandig from "assets/AlbinHandig.png"
 import Portfolio from "assets/Portfolio.png";
 import Code from "assets/Code.png";
 import Colombine from "assets/Colombine.jpg";
 
 const projects = [
+  {
+    title: "Albin Händig",
+    src: AlbinHandig,
+    alt: "A screenshot of the video page",
+    skills: ["Responsive Design", "Format", "CSS", "DNS"],
+    paragraphs: [
+      "I was contacted by Albin, a photographer, who had some trouble with the thumbnails of his video breaking the layout on his site. The site was built using the CMS 'Format', and I fixed the problem by writing some custom CSS. I also helped out with DNS configuration to make sure the site was accessible, both with and without the 'www' prefix. Please check out the result of my work by clicking the link.",
+    ],
+    siteLink: "https://www.albinhandig.se/video",
+  },
   {
     title: "Portfolio",
     src: Portfolio,
@@ -40,7 +51,6 @@ const projects = [
     title: "Colombine",
     src: Colombine,
     alt: "Image of the website of Colombine Teaterförlag",
-    disclaimer: false,
     skills: ["HTML", "CSS", "PHP", "WordPress"],
     paragraphs: [
       "I, along with a colleague, rebuilt the website for Colombine Teaterförlag. The project involved creating a new mobile-first design and integrating it into their existing technical infrastructure. We also developed a company style guide and standardized email signatures. We were solely responsible for the entire process, from preparing time and cost estimates to development, launch and ongoing improvements based on user feedback.",
